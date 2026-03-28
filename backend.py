@@ -40,8 +40,5 @@ config = {
 chatbot = graph.compile(checkpointer=checkpointer)
 
 initial_state = {
-    'messages':[HumanMessage(content="What is the capital of India")]
+    'messages':[HumanMessage(content="What is the recipe to make Pasta")]
 }
-
-response = chatbot.invoke(initial_state, config = config)
-print(response)
